@@ -8,6 +8,10 @@
 - **Git/バージョン管理**: 中級
 
 ## 関心分野（優先度順）
+
+最新の動向については知っていはおきたいものの単語と概要がわかれば良い程度。
+それよりも、本質的な構造や仕組みなどを理解したい。
+
 1. **高**: React, TypeScript, Node.js
 2. **中**: Docker, CI/CD, API設計
 3. **低**: Machine Learning, Mobile Development
