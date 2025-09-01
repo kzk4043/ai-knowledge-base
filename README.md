@@ -1,3 +1,10 @@
+TODO
+
+- [ ] フロー化
+    - https://zenn.dev/yosh1/articles/mastra-ai-agent-framework-guide
+    - https://n8n.io/
+    - Slack等からできるように
+
 # 技術情報キュレーションシステム
 
 AI支援による技術記事の効率的な収集・整理・学習システム
