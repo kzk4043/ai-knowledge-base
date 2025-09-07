@@ -14,8 +14,10 @@
 
 **重要度判定基準**:
 - 複雑な実装が必要だったものや動作が不安定だったものが、ブラウザ標準等で代替できるようになった技術は重要度が高い
+- **有名なライブラリ・フレームワーク**や**業界への影響が大きい**技術を優先
+- マイナーなライブラリの更新情報は優先度低
 
-1. **高**: React, TypeScript, Node.js
+1. **高**: React, TypeScript, Node.js, Deno Fresh
 2. **中**: Docker, CI/CD, API設計
 3. **低**: Machine Learning, Mobile Development
 

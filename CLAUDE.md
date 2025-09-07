@@ -46,21 +46,34 @@ The system follows a **profile-driven content curation approach**:
 ## Working with this Repository
 
 ### User Profile Configuration
-Always reference `00_setting/user_profile.md` when processing content - this drives all prioritization and relevance decisions.
+Always reference `00_setting/user_profile.md` when processing content - this drives all prioritization and relevance decisions. The profile includes importance evaluation criteria such as prioritizing technologies that replace complex/unstable implementations with browser standards.
+
+### URL Processing Workflow
+Use `90_prompt/url_processing.md` as the standard template for processing technical articles:
+
+1. **Content Analysis**: Read URLs and extract article information, including linked articles
+2. **Profile Matching**: Analyze against user profile criteria and technical priorities
+3. **Candidate Presentation**: Present prioritized list with 🔴🟡🟢 importance ratings and reasoning
+4. **User Confirmation**: Wait for user selection before proceeding with summarization
+5. **Structured Summarization**: Create standardized Markdown summaries with metadata, key points, and code examples
+6. **Profile Feedback Loop**: Collect user feedback to refine future prioritization accuracy
+7. **Repository Updates**: Update CHANGELOG.md and consider structural improvements
 
 ### Content Addition Process
-1. Read user profile to understand current interests/skill levels
-2. Analyze provided URLs against profile criteria
-3. Present prioritized candidate list to user for confirmation
-4. Generate summaries only for approved articles
-5. Update appropriate category files
-6. Log changes in CHANGELOG.md
-7. Optionally update user profile based on feedback
+- Read user profile to understand current interests/skill levels (React/TypeScript/Node.js focus)
+- Analyze provided URLs against profile criteria including the preference for browser standard replacements
+- Present prioritized candidate list to user for confirmation
+- Generate summaries only for approved articles using the standard template
+- Update appropriate category files within the numbered directory structure
+- Log changes in CHANGELOG.md with version increments
+- Collect feedback for continuous profile refinement
 
 ### File Organization Rules
-- Place content in appropriate numbered directories (10_, 20_, 30_, 40_)
-- Use descriptive subdirectory names within categories
-- Maintain consistent Markdown formatting per the defined template
+- Place content in appropriate numbered directories (10_general/, 20_frontend/, 30_backend/, 40_devops/)
+- Use descriptive subdirectory names within categories (frameworks/, concepts/, tools/)
+- Maintain consistent Markdown formatting per the defined template structure
 - Add `.gitkeep` files to empty directories for version control
+- Consider structural optimization based on user profile evolution
 
-The system emphasizes **continuous profile improvement** - each interaction should potentially refine the user's profile for better future content curation.
+### Repository Management
+The system emphasizes **continuous profile improvement** and **structural optimization** - each interaction should potentially refine both the user's profile and the repository structure for better future content curation and accessibility.

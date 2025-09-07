@@ -4,7 +4,9 @@
 以下のURLから技術記事を読み込み、ユーザープロファイルに基づいて分析し、ドキュメントに要約してください。
 
 ## URLs:
-- https://javascriptweekly.com/issues/750
+- https://react.statuscode.com/issues/442
+- https://javascriptweekly.com/issues/751
+- https://newsletter.astroweekly.dev/p/astro-weekly-99
 
 ## 処理手順:
 1. 各URLの内容を読み込む
