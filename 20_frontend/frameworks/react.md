@@ -30,6 +30,59 @@ Krasimir TsonevによるReact Server Componentsをフレームワークなしで
 #### 関連リソース
 - [オリジナル記事](https://krasimirtsonev.com)
 
+## React生態系の批判的視点
+
+### React覇権による弊害 🟡
+
+**URL**: https://www.lorenstew.art/blog/react-won-by-default  
+**重要度**: 中  
+**日付**: 2025-09-18  
+**タグ**: #react, #frontend-innovation, #framework-diversity, #technical-debt
+
+#### 概要
+Reactのデフォルト選択がフロントエンド技術革新を阻害しているという批判的視点。詳細な分析は`10_general/industry/frontend_innovation.md`を参照。
+
+#### React開発者への影響
+- Hooks使用時の慎重な設計の重要性
+- 代替フレームワークとの技術的比較の必要性
+- プロジェクト要件に基づく適切な技術選択
+
+## React Server Components (RSC)
+
+### フレームワーク間RSC対応状況 🟡
+
+**URL**: https://rsc.krasimirtsonev.com  
+**重要度**: 中  
+**日付**: 2025-09-18  
+**タグ**: #react, #server-components, #framework-comparison, #rsc
+
+#### 概要
+7つのフレームワーク/ライブラリでのReact Server Components対応状況の包括的分析。テストカバレッジは83%から100%まで幅広い。
+
+#### 100%対応フレームワーク
+1. **Next.js** - 最も普及しているReactフレームワーク
+2. **Vite** - 公式プラグイン、フレームワーク非依存
+3. **Waku** - RSCファーストサポートのReactフレームワーク
+
+#### 83%対応フレームワーク
+1. **Forket** - フレームワーク非依存ライブラリ
+2. **Parcel** - 公式RSCサポート
+3. **ReactRouter** - 実験的バージョン
+4. **RedwoodSDK** - フルスタックReactフレームワーク
+
+#### 共通テスト項目
+- サーバーでの非同期コンポーネントレンダリング
+- サーバー・クライアントコンポーネント混在
+- クライアントコンポーネントハイドレーション
+- サーバー関数のクライアント渡し
+- サーバーアクションと状態管理
+
+#### 制限事項
+一部フレームワークで困難な項目:
+- インライン化されたサーバー関数
+- 近傍スコープ変数にアクセスするサーバーアクション
+- 複雑にネストしたクライアントコンポーネント
+
 ## フレームワーク比較
 
 ### Astro vs Next.js 🟡
@@ -62,6 +115,39 @@ Chris PenningtonによるYouTube動画。ReactからAstroに移行する開発�
 - Astroでのコンポーネント統合を学びたい開発者
 
 ## React Hooks
+
+### useEffect障害事例 🔴
+
+**URL**: https://blog.cloudflare.com/cloudflare-dashboard-outage-useeffect-mistake  
+**重要度**: 高  
+**日付**: 2025-09-18  
+**タグ**: #react, #hooks, #useeffect, #production-issues, #cloudflare
+
+#### 概要
+Cloudflareのダッシュボード障害の根本原因となった`useEffect`の実装ミス。本障害は大規模サービスでのReact Hooksの誤用が実際のサービス停止につながった重要な事例。
+
+#### 障害の概要
+- CloudflareダッシュボードでAPI呼び出しが過剰に発生
+- `useEffect`の依存配列の設定ミスが原因
+- 無限ループによるサービス過負荷
+
+#### 学習ポイント
+- **依存配列の重要性**: useEffectの依存配列は慎重に設定する必要がある
+- **副作用の監視**: 本番環境でのAPI呼び出し頻度の監視が重要
+- **テスト戦略**: useEffectの無限ループを検出するテスト手法が必要
+
+#### ベストプラクティス
+```javascript
+// 悪い例：依存配列の設定ミス
+useEffect(() => {
+  // 処理
+}, [object]); // objectが毎回新しいインスタンスの場合、無限ループ
+
+// 良い例：適切な依存配列
+useEffect(() => {
+  // 処理
+}, [object.id]); // プリミティブ値を使用
+```
 
 ### useState
 基本的な状態管理Hook

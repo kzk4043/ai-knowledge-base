@@ -18,7 +18,7 @@
 - マイナーなライブラリの更新情報は優先度低
 
 1. **高**: React, TypeScript, Node.js, Deno Fresh
-2. **中**: Docker, CI/CD, API設計
+2. **中**: Docker, CI/CD, API設計, Cloudflare
 3. **低**: Machine Learning, Mobile Development
 
 ## 学習目標

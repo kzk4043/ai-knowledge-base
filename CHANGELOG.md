@@ -2,6 +2,41 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [1.4.0] - 2025-09-18
+
+### Added
+- useEffect障害事例分析 (`20_frontend/frameworks/react.md`)
+  - Cloudflareダッシュボード障害の根本原因解析
+  - 本番環境でのReact Hooks誤用による実際のサービス停止事例
+  - useEffect依存配列設定ミスの具体的なベストプラクティス
+- JavaScript ES2023安全な配列メソッド (`20_frontend/concepts/browser_apis.md`)
+  - toSorted(), toReversed(), toSpliced(), with()の技術仕様
+  - ブラウザ標準による不変操作の実現とReact開発への影響
+  - 従来の破壊的メソッドから安全なメソッドへの移行指針
+- React Server Components フレームワーク対応状況 (`20_frontend/frameworks/react.md`)
+  - 7フレームワークでの詳細な互換性分析（83-100%対応範囲）
+  - Next.js, Vite, Waku等の実装差異と技術的制限事項
+- React覇権による技術革新阻害論 (`20_frontend/frameworks/react.md`)
+  - フロントエンド多様性の重要性とデフォルト選択の弊害
+  - Svelte, Solid, Qwikなど代替フレームワークの技術的優位性
+- Bunパッケージマネージャー内部実装 (`30_backend/tools/package_managers.md`)
+  - Zig言語によるシステムプログラミングアプローチ
+  - 20-30倍高速化を実現するバイナリマニフェスト・ネットワーク最適化
+- Node.js依存関係管理戦略 (`30_backend/tools/package_managers.md`)
+  - package.json制御とdepcheck等ツールチェーンの実践的活用
+  - 学術研究に基づく効果的な依存関係肥大化対策
+- Astro x Webflow パートナーシップ (`10_general/industry/astro_partnerships.md`)
+  - 15万ドルスポンサーシップとAI生成アプリでの技術採用
+  - エンタープライズレベルでのAstro承認事例
+- フロントエンド技術革新論 (`10_general/industry/frontend_innovation.md`)
+  - フレームワーク多様性促進のための戦略的アプローチ
+  - 技術選択の意思決定フレームワークと評価マトリックス
+
+### Updated
+- React Status #443, #444, JavaScript Weekly #752, Astro Weekly #100, Astro公式ブログの記事分析
+- ユーザープロファイル照合による優先度付け記事要約（7記事選定）
+- 複数のURL処理とリンク記事の包括的分析実施
+
 ## [1.3.0] - 2025-09-07
 
 ### Added

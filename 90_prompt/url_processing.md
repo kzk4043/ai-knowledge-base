@@ -4,9 +4,11 @@
 以下のURLから技術記事を読み込み、ユーザープロファイルに基づいて分析し、ドキュメントに要約してください。
 
 ## URLs:
-- https://react.statuscode.com/issues/442
-- https://javascriptweekly.com/issues/751
-- https://newsletter.astroweekly.dev/p/astro-weekly-99
+- https://react.statuscode.com/issues/443
+- https://react.statuscode.com/issues/444
+- https://javascriptweekly.com/issues/752
+- https://newsletter.astroweekly.dev/p/astro-weekly-100
+- https://astro.build/blog/webflow-official-partner/
 
 ## 処理手順:
 1. 各URLの内容を読み込む
@@ -47,10 +49,11 @@
 このフィードバックを基に、次回からより精度の高い記事選別を行います。
 ```
 
-6. 記事追加とプロファイル改善をした上で、リポジトリ全体の構造を再構築してください
+6. ３でのユーザの選択およびフィードバックを元に、ユーザプロファイルを更新してください
+7. 記事追加とプロファイル改善をした上で、リポジトリ全体の構造を再構築してください
 
 ### 更新対象:
-- @00_setting/user_profile.md - 必要に応じてプロファイル更新
+- @00_setting/user_profile.md - 必要に応じてユーザプロファイル更新
 - `CHANGELOG.md` - 変更内容の記録
 - 記事追加による全体構造の見直し
 
