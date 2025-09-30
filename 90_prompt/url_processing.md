@@ -4,11 +4,13 @@
 以下のURLから技術記事を読み込み、ユーザープロファイルに基づいて分析し、ドキュメントに要約してください。
 
 ## URLs:
-- https://react.statuscode.com/issues/443
-- https://react.statuscode.com/issues/444
-- https://javascriptweekly.com/issues/752
-- https://newsletter.astroweekly.dev/p/astro-weekly-100
-- https://astro.build/blog/webflow-official-partner/
+- https://react.statuscode.com/issues/445
+- https://javascriptweekly.com/issues/753
+- https://javascriptweekly.com/issues/754
+- https://newsletter.astroweekly.dev/p/astro-weekly-101
+- https://newsletter.astroweekly.dev/p/astro-weekly-102
+- https://astro.build/blog/cloudflare-official-partner/
+- https://astro.build/blog/astro-5140/
 
 ## 処理手順:
 1. 各URLの内容を読み込む
