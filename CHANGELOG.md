@@ -2,6 +2,30 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [1.5.0] - 2025-09-30
+
+### Added
+- WebAssembly 3.0 Standard分析 (`20_frontend/concepts/webassembly.md`)
+  - JavaScript相互運用性の大幅改善
+  - ガベージコレクション・テール呼び出し最適化・例外処理対応
+  - ブラウザ標準化によるパフォーマンス問題の根本的解決
+- Cloudflare × Astro パートナーシップ記事 (`10_general/industry/cloudflare_astro_partnership.md`)
+  - $150,000投資による公式ホスティングパートナーシップ
+  - エンタープライズ級インフラの民主化とオープンソース支援モデル
+- React Router 7.9.0 Stable Middleware (`20_frontend/frameworks/react.md`)
+  - ミドルウェア機能の安定版リリース
+  - ブラウザ標準API活用による認証フロー簡素化
+  - HOCパターンからの移行とベストプラクティス統一
+- GitHub npm Supply Chain Security Plan (`30_backend/languages/nodejs.md`)
+  - 「Shai-Hulud」攻撃対応とマルウェアパッケージ対策
+  - Trusted Publishing推進とサプライチェーン堅牢化
+  - Node.jsエコシステム全体の信頼性向上施策
+
+### Updated
+- React Status #445, JavaScript Weekly #753-754, Astro Weekly #101-102記事分析
+- ユーザープロファイル照合による優先度付け記事要約（4記事選定）
+- WebAssembly・React Router・npm Security等の技術標準化動向分析
+
 ## [1.4.0] - 2025-09-18
 
 ### Added

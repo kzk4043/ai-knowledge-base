@@ -4,13 +4,17 @@
 以下のURLから技術記事を読み込み、ユーザープロファイルに基づいて分析し、ドキュメントに要約してください。
 
 ## URLs:
-- https://react.statuscode.com/issues/445
-- https://javascriptweekly.com/issues/753
-- https://javascriptweekly.com/issues/754
-- https://newsletter.astroweekly.dev/p/astro-weekly-101
-- https://newsletter.astroweekly.dev/p/astro-weekly-102
-- https://astro.build/blog/cloudflare-official-partner/
-- https://astro.build/blog/astro-5140/
+- https://developers.google.com/search/docs/appearance/google-images?hl=ja
+- https://web.dev/explore/fast?hl=ja#optimize-your-images
+- https://web.dev/articles/optimize-ttfb?hl=ja
+- https://web.dev/articles/content-delivery-networks?hl=ja
+- https://web.dev/articles/lcp-lazy-loading?hl=ja
+- https://web.dev/articles/ttfb?hl=ja
+- https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing?utm_source=devtools&utm_campaign=stable&hl=ja#avoid-forced-synchronous-layouts
+- https://web.dev/articles/optimize-long-tasks?utm_source=devtools&utm_campaign=stable&hl=ja
+- https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/?utm_source=lighthouse&utm_medium=lr
+- https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=lr
+- https://developers.google.com/search/docs/appearance/core-web-vitals?hl=ja
 
 ## 処理手順:
 1. 各URLの内容を読み込む
