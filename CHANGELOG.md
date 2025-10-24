@@ -2,6 +2,60 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [1.6.0] - 2025-10-24
+
+### Added
+- React Foundation設立とReact 19.2リリース (`20_frontend/frameworks/react_foundation_19_2.md`)
+  - React/React NativeのLinux Foundation移管による独立化
+  - `<Activity />`コンポーネント、`useEffectEvent` Hook等の新機能
+  - コミュニティ主導開発体制への移行とエコシステム影響
+- React Compiler v1.0安定版リリース (`20_frontend/frameworks/react_compiler_v1.md`)
+  - 自動メモ化による複雑な最適化作業の簡素化
+  - 段階的導入とパフォーマンス向上の実践手法
+  - 手動メモ化からの解放とベストプラクティス統一
+- Node.js v25.0.0とBun 1.3リリース (`30_backend/languages/nodejs_v25_bun_1_3.md`)
+  - Web Storage API標準対応による一貫性確保
+  - パフォーマンス向上とセキュリティ強化
+  - フルスタック開発サーバー統合とデータベース組み込み
+- Next.js 16 Beta - Turbopack安定化 (`20_frontend/tools/nextjs_16_turbopack.md`)
+  - デフォルトバンドラー移行による大幅高速化
+  - React 19.2統合とReact Compiler対応
+  - 複雑なビルド設定の簡素化と開発効率向上
+- TypeScript最新動向とエコシステム進化 (`20_frontend/concepts/typescript_latest_trends.md`)
+  - 高度な型システム活用パターンの実践手法
+  - React Compiler連携と大規模プロジェクト最適化
+  - 型駆動開発アプローチの確立
+- Cloudflare Sandboxes - セキュアなコード実行環境 (`40_devops/infrastructure/cloudflare_sandboxes.md`)
+  - 信頼できないコードの安全な実行環境
+  - エッジネットワーク活用による低レイテンシ実現
+  - 複雑なセキュリティ実装の標準化
+- Viteドキュメンタリー - ビルドツールの革新 (`20_frontend/tools/vite_documentary.md`)
+  - Evan You、Rich Harris、Ryan Carniatoインタビューによる開発背景
+  - ビルドツール革命とフレームワーク横断的影響
+  - 複雑なビルド設定からの解放過程
+- Denoのnpm脆弱性保護機能 (`30_backend/languages/deno_npm_security.md`)
+  - "secure by default"によるnpm脆弱性の根本解決
+  - サンドボックス実行と明示的権限管理
+  - 複雑なセキュリティ対策の標準機能化
+- Node.js標準機能によるnpmパッケージ代替 (`30_backend/languages/nodejs_standard_features.md`)
+  - 15の主要機能の標準ライブラリ組み込み
+  - 複雑な依存関係管理からの解放
+  - セキュリティリスク削減とパフォーマンス向上
+- Vite+ - 統合JavaScript ツールチェーン (`20_frontend/tools/vite_plus_toolchain.md`)
+  - Rust実装による統合開発環境の革新
+  - 複雑なツール選択・設定・デバッグ問題の解決
+  - 2026年リリース予定の次世代ツールチェーン
+- CloudflareのJavaScript信頼性向上 - WAICT提案 (`40_devops/infrastructure/cloudflare_waict.md`)
+  - Web Application Integrity, Consistency, and Transparencyによる信頼性改善
+  - 暗号学的証明と透明性ログによるセキュリティ強化
+  - Web標準化に向けた将来的な取り組み
+
+### Updated
+- JavaScript Weekly #755-757, React Status #447-448分析による11記事要約
+- ユーザープロファイル照合による重要度評価（🔴高4記事、🟡中3記事、🟢低4記事）
+- 複雑な実装の標準化、業界影響度重視の評価基準適用
+- ブラウザ標準・React・Node.js関連技術の優先的分析
+
 ## [1.5.0] - 2025-09-30
 
 ### Added

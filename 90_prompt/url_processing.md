@@ -4,17 +4,13 @@
 以下のURLから技術記事を読み込み、ユーザープロファイルに基づいて分析し、ドキュメントに要約してください。
 
 ## URLs:
-- https://developers.google.com/search/docs/appearance/google-images?hl=ja
-- https://web.dev/explore/fast?hl=ja#optimize-your-images
-- https://web.dev/articles/optimize-ttfb?hl=ja
-- https://web.dev/articles/content-delivery-networks?hl=ja
-- https://web.dev/articles/lcp-lazy-loading?hl=ja
-- https://web.dev/articles/ttfb?hl=ja
-- https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing?utm_source=devtools&utm_campaign=stable&hl=ja#avoid-forced-synchronous-layouts
-- https://web.dev/articles/optimize-long-tasks?utm_source=devtools&utm_campaign=stable&hl=ja
-- https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/?utm_source=lighthouse&utm_medium=lr
-- https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/?utm_source=lighthouse&utm_medium=lr
-- https://developers.google.com/search/docs/appearance/core-web-vitals?hl=ja
+
+- https://javascriptweekly.com/issues/757
+- https://react.statuscode.com/issues/448
+- https://javascriptweekly.com/issues/756
+- https://feedpress.me/link/24028/17181516/issue-623
+- https://react.statuscode.com/issues/447
+- https://javascriptweekly.com/issues/755
 
 ## 処理手順:
 1. 各URLの内容を読み込む
