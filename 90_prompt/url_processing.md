@@ -5,12 +5,9 @@
 
 ## URLs:
 
-- https://javascriptweekly.com/issues/757
-- https://react.statuscode.com/issues/448
-- https://javascriptweekly.com/issues/756
-- https://feedpress.me/link/24028/17181516/issue-623
-- https://react.statuscode.com/issues/447
-- https://javascriptweekly.com/issues/755
+- https://javascriptweekly.com/issues/758
+- https://react.statuscode.com/issues/449
+- https://css-weekly.com/issue-625/
 
 ## 処理手順:
 1. 各URLの内容を読み込む

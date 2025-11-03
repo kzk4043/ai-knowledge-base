@@ -2,6 +2,52 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [1.7.0] - 2025-10-31
+
+### Added
+- URL Pattern API - ブラウザ標準URL解析 (`20_frontend/concepts/url_pattern_api.md`)
+  - 複雑な正規表現ベースURL解析の標準化代替
+  - 宣言的パターン定義による実装の簡素化
+  - Baseline Newly Available対応
+- JSON Import Attributes - ES Modules標準化 (`20_frontend/concepts/json_import_attributes.md`)
+  - fetch API複雑処理の標準import文代替
+  - バンドラー最適化と型安全性の向上
+  - 静的解析とデッドコード除去対応
+- TypeScript非従来型キャスト手法解析 (`20_frontend/concepts/typescript_unconventional_casting.md`)
+  - 4つのアンチパターンキャスト手法の学術的解説
+  - 型システム境界理解と安全性重視のアプローチ
+  - 本番環境使用禁止の明確な警告と代替手法
+- React Conf 2025包括的レポート (`20_frontend/frameworks/react_conf_2025_recap.md`)
+  - React Compiler 1.0正式版・React 19.2新機能
+  - React Foundation設立とコミュニティ主導体制
+  - パフォーマンス向上とエコシステム統合強化
+- Next.js 16包括的ガイド (`20_frontend/tools/nextjs_16_comprehensive.md`)
+  - Cache Components明示的キャッシング・Turbopack安定化
+  - AI支援デバッグとReact Compiler統合
+  - 開発者体験の大幅改善と予測可能性向上
+- Vitest 4.0とAngular統合 (`20_frontend/tools/vitest_4_angular_integration.md`)
+  - Angular 21デフォルトテストフレームワーク採用
+  - 安定ブラウザモードとビジュアルリグレッションテスト
+  - ESM対応とTypeScriptファーストクラス統合
+- CSS Linear Timing Function解析 (`20_frontend/concepts/css_linear_timing_springs.md`)
+  - JavaScript物理アニメーションのCSS標準代替
+  - Joshua Comeauのスプリング・バウンス実装手法
+  - 複雑なアニメーションライブラリ依存からの解放
+- Dan Abramovデバッグ手法 (`10_general/development/debugging_dan_abramov.md`)
+  - バグ再現重視の系統的デバッグアプローチ
+  - 問題簡素化技術と効果的な修正手法
+  - React開発者向け実践的デバッグ哲学
+- CSS Anchor Positioning API (`20_frontend/concepts/css_anchor_positioning_tooltips.md`)
+  - JavaScript複雑位置計算の標準CSS代替
+  - 完璧なツールチップ実装とパフォーマンス改善
+  - 宣言的位置指定と自動フォールバック機能
+
+### Updated
+- JavaScript Weekly #758, React Status #449, CSS Weekly #625分析による9記事要約
+- ユーザープロファイル照合による重要度評価（🔴高4記事、🟡中4記事、🟢低1記事）
+- ブラウザ標準技術・React・TypeScript関連の優先的分析継続
+- 複雑実装の標準化代替技術重視の評価基準適用
+
 ## [1.6.0] - 2025-10-24
 
 ### Added
