@@ -1,13 +1,38 @@
-# Vite+ - 統合JavaScript ツールチェーン
+# VoidZero - 統合JavaScript ツールチェーン
 
-**URL**: https://voidzero.dev/posts/announcing-vite-plus  
-**日付**: 2025年10月  
-**重要度**: 🟡 中  
-**タグ**: Vite, ツールチェーン, Rust, 開発効率, 統合環境
+**URL**: https://voidzero.dev/posts/announcing-voidzero-inc  
+**日付**: 2025年11月  
+**重要度**: 🔴 高  
+**タグ**: VoidZero, Vite, ツールチェーン, Rust, 資金調達, Oxc, Rolldown
+
+## VoidZero Series A 資金調達ニュース
+
+**資金調達**: $12.5M Series A（累計$17.1M）  
+**創設者**: Evan You（Vue.js、Viteの創作者）  
+**投資家**: Accel等  
+**目標**: 統一されたJavaScriptツールチェーンの構築
 
 ## 概要
 
-Vite+は、JavaScript開発の複雑なツールチェーンを統一する革新的なソリューション。Rust実装による高速化と包括的な開発機能により、従来のツール選択・設定・デバッグの負担を解決する。
+VoidZeroは、JavaScript開発の複雑なツールチェーンを統一する革新的な会社。Evan YouがVue.js、Viteに続いて立ち上げた企業で、Rust実装による高速化と包括的な開発機能により、従来のツール選択・設定・デバッグの負担を解決する。
+
+## VoidZeroの主要プロジェクト
+
+### Oxc - 高性能JavaScriptツールチェーン
+- **パーサー**: 最速のJavaScriptパーサー
+- **リゾルバー**: モジュール解決の最適化
+- **トランスフォーマー**: TypeScript、JSX変換
+- **リンター**: ESLintより高速なOxlint
+
+### Rolldown - 次世代バンドラー
+- **パフォーマンス**: esbuildより高速
+- **互換性**: Rollupとの高い互換性
+- **統合**: Viteとの密結合設計
+
+### Vitest - 包括的テストランナー
+- **統合**: Viteとの完全統合
+- **パフォーマンス**: 高速テスト実行
+- **DX**: 優れた開発者体験
 
 ## 主要な特徴
 

@@ -2,6 +2,32 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [1.8.0] - 2025-11-04
+
+### Added
+- VoidZero Series A資金調達情報 (`20_frontend/tools/vite_plus_toolchain.md`)
+  - $12.5M Series A資金調達とツールチェーン統合戦略
+  - Oxc, Rolldown, Vistestによる開発環境革新
+  - 複雑なツール設定からの解放とRust実装による高速化
+- Node.js v24 LTS重要リリース (`30_backend/languages/nodejs.md`)
+  - 2028年まで長期サポート対象・npm 11統合による依存関係管理改善
+  - URLPattern標準搭載・AsyncLocalStorage安定化
+  - 標準ライブラリ機能拡張による複雑な実装の簡素化
+- フレームワークパフォーマンス比較研究 (`20_frontend/frameworks/framework_performance_comparison.md`)
+  - 同一アプリ10種類実装によるモバイルパフォーマンス詳細分析
+  - バンドルサイズ最大6倍差・React系の重量級 vs Svelte系の軽量級
+  - 実用的なフレームワーク選定指針とトレードオフ分析
+- JavaScriptディレクティブ標準化論考 (`20_frontend/concepts/javascript_directives_platform_boundary.md`)
+  - `use client`等フレームワーク固有機能の標準化重要性
+  - プラットフォーム境界の明確化とエコシステム統合課題
+  - TC39標準化提案に向けた技術的考察
+
+### Updated
+- JavaScript Weekly #759分析による4記事要約完了
+- ユーザープロファイル照合による重要度評価（🔴高2記事、🟡中2記事）
+- ViteとNode.js関連の高優先度技術情報の包括的分析
+- 開発ツールチェーン統合・標準化動向重視の評価基準適用
+
 ## [1.7.0] - 2025-10-31
 
 ### Added
