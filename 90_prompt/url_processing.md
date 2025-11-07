@@ -5,7 +5,9 @@
 
 ## URLs:
 
-- https://javascriptweekly.com/issues/759
+- https://react.statuscode.com/issues/450
+- https://astro.build/blog/stainless-astro-launch/
+- https://css-weekly.com/issue-626/
 
 ## 処理手順:
 1. 各URLの内容を読み込む

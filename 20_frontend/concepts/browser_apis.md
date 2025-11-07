@@ -98,3 +98,113 @@ Nolan Lawsonによる記事「Why Do Browsers Throttle JavaScript Timers?」の�
 
 #### 関連リソース
 - [元記事](https://nolanlawson.com)
+
+## Web API
+
+### View Transitions API 🟡
+
+**URL**: https://garden.bradwoods.io/notes/javascript/web-api/view-transition  
+**重要度**: 中  
+**日付**: 2025-11-07  
+**タグ**: #view-transitions, #web-api, #animations, #browser-standards
+
+#### 概要
+View Transitions APIは、ページ間のナビゲーション時に要素をアニメーション化する方法を提供し、Webアプリケーション全体でスムーズな視覚的遷移を実現するブラウザネイティブAPI。
+
+#### 主な機能
+
+**1. デフォルトトランジション**
+```css
+@view-transition {
+  navigation: auto;  /* クロスフェードアニメーション有効化 */
+}
+```
+
+**2. カスタムアニメーション**
+```css
+@keyframes slide-to-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+::view-transition-old(root) {
+  animation: slide-to-left 1s, fade-out 1s;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 1s;
+}
+```
+
+**3. 要素間の接続（モーフィング）**
+```css
+.hero-image {
+  view-transition-name: hero;
+}
+/* 異なるページの同じview-transition-nameを持つ要素が自動的にモーフィング */
+```
+
+**4. ページベースの動的トランジション**
+```javascript
+document.addEventListener('pageswap', (e) => {
+  if (e.viewTransition) {
+    // ナビゲーション先に基づいてスタイルを動的変更
+    document.documentElement.classList.add('slide-transition');
+  }
+});
+
+document.addEventListener('pagereveal', (e) => {
+  // 新ページでの追加処理
+});
+```
+
+#### 技術的メリット
+
+**ライブラリ代替価値**
+- **Framer Motion代替**: 複雑なアニメーションライブラリの代替
+- **バンドルサイズ削減**: 外部依存関係の排除
+- **パフォーマンス**: ネイティブ実装による高速化
+
+**開発効率**
+- **最小コード**: CSSとHTMLのみで実装可能
+- **設定不要**: ブラウザ標準機能として利用
+- **デバッグ対応**: ブラウザ開発者ツールでの検証可能
+
+#### ブラウザサポート
+- **Chrome/Edge**: 111+（安定サポート）
+- **Safari**: 実装予定
+- **Firefox**: 限定的サポート
+
+#### 使用例（SPAでの活用）
+
+**複数同時アニメーション**
+```css
+.card {
+  view-transition-name: var(--card-name);
+  transition: transform 0.3s;
+}
+
+.navigation {
+  view-transition-name: nav;
+}
+
+/* それぞれ独立したタイミングでアニメーション */
+::view-transition-old(card) { animation: scale-out 0.5s; }
+::view-transition-new(card) { animation: scale-in 0.5s; }
+::view-transition-old(nav) { animation: slide-up 0.3s; }
+```
+
+#### 制限事項
+- `overflow: hidden`要素での制約あり
+- ブラウザサポートが限定的
+- 複雑なレイアウト変更時の予期しない動作
+
+#### 学習価値
+- **ブラウザ標準化**: 複雑なアニメーションライブラリからの脱却
+- **将来性**: Web標準として期待される技術
+- **パフォーマンス**: ネイティブ実装の効率性
+
+#### 採用検討ポイント
+- **段階的導入**: Progressive Enhancementとして導入
+- **フォールバック**: 非対応ブラウザでの代替手段
+- **ユーザー体験**: 適度なアニメーション使用の重要性

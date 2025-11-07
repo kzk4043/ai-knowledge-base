@@ -2,6 +2,24 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [1.9.0] - 2025-11-07
+
+### Added
+- Storybook 10 ESM-only化とツールチェーン統合 (`20_frontend/tools/storybook_10_esm_integration.md`)
+  - ESM-only化による29%軽量化とビルド高速化
+  - VitestとNext.js 16サポートによる開発ツールチェーン統合
+  - 複雑な設定管理からの解放と開発効率の大幅向上
+- View Transitions API ネイティブアニメーション (`20_frontend/concepts/browser_apis.md`)
+  - Framer Motion等ライブラリの標準API代替
+  - ページ間モーフィング・カスタムアニメーションのネイティブ実装
+  - バンドルサイズ削減とパフォーマンス向上の実現
+
+### Updated
+- React Status Code #450, CSS Weekly #626, Astro Blog分析による2記事要約
+- ユーザープロファイル照合による重要度評価（🔴高1記事、🟡中1記事）
+- 開発ツールチェーン統合・ブラウザ標準化重視の評価基準適用
+- 複雑な実装の標準機能代替技術への優先的注目継続
+
 ## [1.8.0] - 2025-11-04
 
 ### Added
