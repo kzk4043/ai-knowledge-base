@@ -246,7 +246,71 @@ const requestContext = new AsyncLocalStorage();
 ### まとめ
 Node.js v24 LTSは、依存関係管理・標準ライブラリ拡張・セキュリティ標準化の重要な進歩をもたらす。特にnpm 11の改善とURLPatternの標準搭載は、複雑な実装を標準機能で代替する理想的な進化を示している。
 
+## Node.js Runtime選択肢
+
+### Node.js v24 LTS + Vercel Bun Runtime サポート 🟡
+
+**URL**: https://javascriptweekly.com/issues/760, https://react.statuscode.com/issues/450  
+**重要度**: 中  
+**日付**: 2025年11月  
+**タグ**: #nodejs, #bun, #vercel, #runtime, #dependency-management
+
+#### 概要
+VercelがBun runtimeの公式サポートを発表し、Node.js v24 LTSと並行してランタイム選択肢が拡充。依存関係管理の複雑さを解決する重要な進歩。
+
+#### Vercel Bun Runtime サポート
+```javascript
+// vercel.json での設定
+{
+  "functions": {
+    "app.js": {
+      "runtime": "bun"
+    }
+  }
+}
+
+// package.json での指定
+{
+  "engines": {
+    "bun": "^1.0.0"
+  }
+}
+```
+
+#### パフォーマンス比較
+- **起動速度**: Node.jsより高速なコールドスタート
+- **パッケージ管理**: 統合されたパッケージマネージャー
+- **バンドルサイズ**: より小さなデプロイメントサイズ
+- **開発体験**: 統一ツールチェーンによる設定簡素化
+
+#### 移行考慮事項
+```javascript
+// LTS採用戦略
+{
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
+
+// Docker でのLTS使用
+FROM node:24-alpine
+```
+
+#### ランタイム選択指針
+- **既存プロジェクト**: Node.js LTSによる安定運用
+- **新規プロジェクト**: 要件に応じたBun評価
+- **クラウド統合**: Vercel等での最適化活用
+- **パフォーマンス**: 実測による選択
+
+#### 学習ポイント
+1. **LTS戦略**: 長期サポートによる本番環境構築
+2. **依存関係削減**: 標準ライブラリによる外部依存最小化
+3. **ランタイム選択**: プロジェクト特性に応じた適切な判断
+4. **クラウド統合**: プラットフォーム最適化の活用
+
 ## 関連リソース
 - [Node.js公式ドキュメント](https://nodejs.org/docs)
 - [Express.js公式ガイド](https://expressjs.com)
 - [npm Security Guidelines](https://docs.npmjs.com/security)
+- [Bun Runtime Documentation](https://bun.sh)
+- [Vercel Functions](https://vercel.com/docs/functions)

@@ -2,6 +2,35 @@
 
 技術情報キュレーションシステムの変更履歴
 
+## [2.0.0] - 2025-11-27
+
+### Added
+- React 19.2 非同期機能強化分析 (統合: `20_frontend/frameworks/react.md`)
+  - 「async everywhere」コンセプトによる根本的な非同期処理改善
+  - Server ActionsとSuspenseの統合による複雑な状態管理の簡素化
+  - TypeScript親和性の向上と型安全な非同期コンポーネント実装
+- TypeScript Compiler Go言語書き直し (統合: `20_frontend/concepts/typescript_latest_trends.md`) 
+  - Anders Hejlsbergによる根本的なパフォーマンス改善プロジェクト
+  - 並列処理とメモリ効率化による大規模プロジェクト対応
+  - 開発ツールチェーン統合の簡素化と継続性確保
+- Node.js v24 LTS + Vercel Bun Runtime サポート (統合: `30_backend/languages/nodejs.md`)
+  - LTS長期安定性とBun統合による依存関係管理の複雑さ解決
+  - 標準ライブラリ拡張による外部依存関係削減
+  - Vercel クラウド統合による開発ツールチェーン簡素化
+
+### Updated
+- **ファイル構造のカテゴリ別統合**:
+  - 個別記事ファイルを主要カテゴリファイルに統合
+  - React関連: `react.md` に統合
+  - TypeScript関連: `typescript_latest_trends.md` に統合  
+  - Node.js関連: `nodejs.md` に統合
+- ユーザープロファイルCSS重要度調整
+  - CSS標準機能（重要な新機能のみ）を中優先度に変更
+  - CSS一般（デザインテクニック等）を除外条件に追加
+  - ブラウザ標準化される重要機能のみを対象とする方針明確化
+- 13 URLs記事分析による3記事厳選要約（React、TypeScript、Node.js最新動向）
+- プロファイルフィードバック収集とリアルタイム反映システム運用
+
 ## [1.9.0] - 2025-11-07
 
 ### Added

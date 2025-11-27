@@ -227,6 +227,90 @@ const memoizedValue = useMemo(() => expensiveCalculation(), [deps]);
 const memoizedCallback = useCallback(() => {}, [deps]);
 ```
 
+## React 19.x 最新機能
+
+### React 19.2 - Async Everywhere 🔴
+
+**URL**: https://react.statuscode.com/issues/453  
+**重要度**: 高  
+**日付**: 2025年11月  
+**タグ**: #react, #async-everywhere, #server-actions, #suspense
+
+#### 概要
+React 19.2で「async everywhere」のコンセプトが本格導入され、非同期処理が根本的に改善された。Server ComponentsとClient Componentsでの一貫した非同期処理を実現。
+
+#### 主要な新機能
+- **非同期Server Actions標準化**: フォーム処理とデータ変更の統合
+- **Suspenseとの統合改善**: ローディング状態の自動管理
+- **concurrent features安定化**: 並行レンダリングの実用化
+- **エラーハンドリング統一**: 一貫したエラー処理パターン
+
+#### 技術的詳細
+```jsx
+// Server Component with async everywhere
+async function UserProfile({ id }) {
+  const user = await fetchUser(id);
+  return <UserDetails user={user} />;
+}
+
+// Client Component with async actions
+function PostForm() {
+  async function handleSubmit(formData) {
+    await createPost(formData); // Server Action
+  }
+  return <form action={handleSubmit}>...</form>;
+}
+
+// Suspenseとの統合
+function App() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <AsyncUserProfile id="123" />
+    </Suspense>
+  );
+}
+```
+
+#### 学習ポイント
+1. **非同期パターン統一**: サーバー・クライアント間での一貫した処理
+2. **TypeScript親和性**: 型安全な非同期コンポーネント記述
+3. **パフォーマンス最適化**: Suspenseとの組み合わせ効果
+4. **開発体験向上**: 複雑な非同期状態管理の簡素化
+
+### React Foundation設立とReact 19.2 🔴
+
+**URL**: https://react.statuscode.com/issues/447, https://react.statuscode.com/issues/448  
+**重要度**: 高  
+**日付**: 2025年10月  
+**タグ**: #react, #foundation, #governance, #community
+
+#### 概要
+ReactとReact NativeがMetaから独立し、Linux Foundation支援のReact Foundationへ移管。コミュニティ主導の開発体制へ転換し、長期的な中立性と安定性を確保。
+
+#### Foundation設立の意義
+- **独立性確保**: 特定企業からの独立によるエコシステム中立化
+- **企業バッカー**: Amazon、Expo、Meta、Microsoftによる支援
+- **長期安定性**: オープンソース基盤としての持続可能性向上
+
+#### React 19.2追加機能
+```jsx
+// 新しい<Activity />コンポーネント
+function App() {
+  return (
+    <Activity>
+      <ComplexComponent />
+    </Activity>
+  );
+}
+
+// useEffectEvent Hook
+const handleEvent = useEffectEvent(() => {
+  // 副作用の直感的な処理
+});
+```
+
 ## 関連リソース
 - [React公式ドキュメント](https://react.dev)
 - [React Hooks API](https://react.dev/reference/react)
+- [React Foundation](https://react.foundation)
+- [React Conf 2025](https://react.dev/conf)

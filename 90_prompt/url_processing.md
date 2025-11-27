@@ -8,6 +8,16 @@
 - https://react.statuscode.com/issues/450
 - https://astro.build/blog/stainless-astro-launch/
 - https://css-weekly.com/issue-626/
+- https://javascriptweekly.com/issues/760
+- https://react.statuscode.com/issues/451
+- https://css-weekly.com/issue-627/
+- https://javascriptweekly.com/issues/761
+- https://react.statuscode.com/issues/452
+- https://css-weekly.com/issue-628/
+- https://astro.build/blog/astro-5160/
+- https://javascriptweekly.com/issues/762
+- https://react.statuscode.com/issues/453
+- https://css-weekly.com/issue-629/
 
 ## 処理手順:
 1. 各URLの内容を読み込む
@@ -32,7 +42,9 @@
 どの記事を要約しますか？（番号で選択、複数可）
 ```
 
-4. 記事の要約を実施し、構造化した上で、対象となるフォルダに要約を記載する
+4. 記事の要約を実施し、構造化した上で、**カテゴリ別の既存ファイルに統合**する
+   - 既存のカテゴリに該当する場合は、新しい個別ファイルは作成しない
+   - 既存のカテゴリに該当しない場合のみ、新規ファイル作成
 5. 要約完了後のフィードバック収集:
 
 ```
@@ -49,12 +61,17 @@
 ```
 
 6. ３でのユーザの選択およびフィードバックを元に、ユーザプロファイルを更新してください
-7. 記事追加とプロファイル改善をした上で、リポジトリ全体の構造を再構築してください
+7. **必須：カテゴリ別ファイル統合と構造整理**
+   - 個別記事ファイルを既存カテゴリファイルに統合
+   - 重複内容の整理と体系的な構造化
+   - 不要な個別ファイルの削除
+   - 関連技術の知識を一箇所に集約
 
 ### 更新対象:
 - @00_setting/user_profile.md - 必要に応じてユーザプロファイル更新
-- `CHANGELOG.md` - 変更内容の記録
-- 記事追加による全体構造の見直し
+- `CHANGELOG.md` - 変更内容の記録（統合したファイル名を明記）
+- **ファイル統合**: 個別記事→カテゴリ別ファイルへの統合実施
+- **構造最適化**: 知識の体系的整理とアクセス性向上
 
 ## コンテキスト
 - 全て日本語で記載

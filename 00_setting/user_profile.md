@@ -22,8 +22,8 @@
 - マイナーなライブラリの更新情報は優先度低
 
 1. **高**: React, TypeScript, Node.js, Deno, Vite
-2. **中**: Docker, CI/CD, API設計, Cloudflare, ビルドツール統合, セキュリティ標準化
-3. **低**: Machine Learning, Mobile Development
+2. **中**: Docker, CI/CD, API設計, Cloudflare, ビルドツール統合, セキュリティ標準化, CSS標準機能（重要な新機能のみ）
+3. **低**: Machine Learning, Mobile Development, CSS一般（デザインテクニック等）
 
 ## 学習目標
 ### 短期（1-3ヶ月）
@@ -49,3 +49,4 @@
 ## 除外条件
 - 初歩的なプログラミング入門
 - レガシー技術（IE対応等）
+- CSS一般のデザインテクニック、アニメーション実装方法（標準化された新機能は除く）
